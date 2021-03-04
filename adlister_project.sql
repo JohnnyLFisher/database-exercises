@@ -1,6 +1,6 @@
 USE adlister;
-# For a given ad, what is the email address of the user that created it?
 
+# For a given ad, what is the email address of the user that created it?
 SELECT email
 FROM Users
 WHERE userid IN (
@@ -10,13 +10,11 @@ WHERE userid IN (
          );
 
 # For a given ad, what category, or categories, does it belong to?
-
 SELECT catagoryid
 FROM posts
 WHERE postid = 'INSERT POSTID';
 
 # For a given category, show all the ads that are in that category.
-
 SELECT *
 FROM posts
 WHERE catagoryid IN (
